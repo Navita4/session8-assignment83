@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head>
+
+    <title>Untitled Document</title>
+
+    <meta http-equiv = "Content-Type" content = "text/html; charset = utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+
+    <link rel = "stylesheet" type = "text/css" href = "#" />
+    <!--Add your .css file-->
+
+
+
+    <style type="text/css">
+
+    </style>
+    <!--  Internal css link -->
+
+    <script src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script type = "text/javascript" src = "#"></script>
+
+    <!--Add Your External jQuery Plugin-->
+
+
+
+    <script type = "text/javascript" lang="javascript">
+
+
+    </script>
+    <!--  Internal jquery/javascript link-->
+
+</head>
+
+
+<body>
+<form>
+            <h1><b>jQuery Demo</b></h1>
+            <div id = "Form1">
+                
+                 Firstname:<br/>
+            <input type="text" name="fname /"><br/>
+            Lastname:<br/>
+            <input type="text" name="lname /"><br/>
+            Password:<br/>
+            <input type="text" name="Password /"><br/>
+            Confirm Password:</br>
+        <input type="text" name="Confirm Password /"><br/>
+        <br>
+            <input type="text" id="txtInput" name="txtInput"/>
+        <input type="submit" id="btnInput" value="submit"/>
+            
+        </form>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+$(function(){
+    $('#btnInput').prop('disabled',true);
+    $('#txtInput').keyup(function(){
+        if ($(this).val()!=''){
+            $('#btnInput').prop('disabled',false);
+        }
+    });
+})
+
+</script>
+
+
+</body>
+
+</html>
